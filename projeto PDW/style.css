@@ -4,6 +4,11 @@
   font-family: Montserrat, sans-serif;
 }
 
+header{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
 body{
   margin:0;
   align-items: center;
@@ -13,28 +18,8 @@ body{
   background-size: cover;
 }
 
-.container{
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 20vh 1fr 1fr 10vh;
-  gap: 10px;
-  padding:10px;
-  box-sizing: border-box;
-}
 
 
-header{
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-.imgslider{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-left: 10vw;
-}
 
 .logo{
   color: white;
@@ -140,6 +125,25 @@ a.active, a:hover{
   }
 }
 
+
+/*Index page*/
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20vh 1fr 1fr 10vh;
+  gap: 10px;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+.imgslider{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: 10vw;
+}
 
 .slider{
   position: relative;
@@ -265,7 +269,6 @@ a.active, a:hover{
   }
 }
 
-
 .imagediv{
   display: flex;
   align-items: center;
@@ -278,7 +281,6 @@ a.active, a:hover{
   width: 70%;
   border-radius: 100%;
 }
-
 
 .shortbio{
   grid-column-start: 1;
@@ -301,6 +303,42 @@ a.active, a:hover{
 .bestwork h2, p{
   color: white;
 }
+
+@media (max-width: 1445px){
+  .container{
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 20vh, 20vh, 10vh, 10vh, 1fr;
+  }
+  .bestwork{
+    margin-left: 10vw;
+  }
+
+  .shortbio{
+    margin-right: 10vw;
+    height: auto;
+  }
+
+  .imgslider{
+    margin-top: 5vh;
+    margin-right: 10vw;
+    margin-bottom: 5vh;
+  }
+
+  .imagediv{
+    margin-left: 10vw;
+  }
+
+  .slider{
+    z-index: -1;
+  }
+}
+
+/*End Index page*/
+
+
+/*Publications page*/
+
 
 footer{
   margin-top: 3vh;
@@ -337,35 +375,4 @@ footer{
 }
 .butoes{
   height: 50%;
-}
-
-
-@media (max-width: 1445px){
-  .container{
-    display: block;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 20vh, 20vh, 10vh, 10vh, 1fr;
-  }
-  .bestwork{
-    margin-left: 10vw;
-  }
-
-  .shortbio{
-    margin-right: 10vw;
-    height: auto;
-  }
-
-  .imgslider{
-    margin-top: 5vh;
-    margin-right: 10vw;
-    margin-bottom: 5vh;
-  }
-
-  .imagediv{
-    margin-left: 10vw;
-  }
-
-  .slider{
-    z-index: -1;
-  }
 }
