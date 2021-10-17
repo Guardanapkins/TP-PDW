@@ -117,7 +117,7 @@ a.active, a:hover{
 
   a:hover, a.active{
     background: none;
-    color: #0082e6;
+    color: #847ea6;
   }
 
   #check:checked ~ ul{
@@ -420,7 +420,7 @@ a.active, a:hover{
   height: 25px;
   right: 63px;
   background-color: white;
-  border: 4px solid #DAA520;
+  border: 4px solid #847ea6;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -541,7 +541,7 @@ a.active, a:hover{
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin-top: 2%
+    margin-top: 2%;
 }
 
 
@@ -567,15 +567,15 @@ a.active, a:hover{
  }
 
  .flex-item-right-proj .inner{
-      margin-top: 5%;
+    margin-top: 5%;
  }
+
  #projeto1{
    width: 30%;
-
  }
+
  #projeto2{
    width: 30%;
-
  }
 
  .projeto:hover{
@@ -667,6 +667,11 @@ footer{
   margin-left: 10vw;
   margin-right: 10vw;
 }
+
+a.active2, a.active2:hover{
+  color: #4c1c9e;
+  transition: .5s;
+} 
 
 .facebook, .youtube, .linkedin, .github{
   color: white;
