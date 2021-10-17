@@ -472,7 +472,7 @@ a.active, a:hover{
 /* The actual content */
 .content {
   margin-right: 80px;
-  padding: 20px 30px;
+  padding: 10px 20px;
   background-color: white;
   position: relative;
   border-radius: 6px;
@@ -621,9 +621,17 @@ a.active, a:hover{
        flex-direction: column;
        margin-top: 5%;
    }
+
+   .flex-container-proj{
+    display: block;
+    flex-direction: column;
+    margin-top: 5%;
+   }
+
    #projeto1{
        width: 40%;
      }
+
    #projeto2{
        width: 40%;
        margin-top: 10%;
@@ -635,11 +643,13 @@ a.active, a:hover{
      font-size: 20px;
      padding-bottom: 0.5%;
    }
+
    .h3-proj{
      text-align: justify;
      color: #847ea6;
      font-size: 15px;
    }
+
    .p-proj{
      text-align: justify;
      color: white;
@@ -647,11 +657,7 @@ a.active, a:hover{
      padding-top: 0.7%;
      padding-bottom: 1%;
  }
-
-
-
-
- }
+}
 
 /*End of projects page*/
 footer{
