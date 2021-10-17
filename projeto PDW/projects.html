@@ -6,11 +6,20 @@
   <title>Main Page</title>
   <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <script type="text/javascript">
+        function showContent(obj)
+            {
+            var inner = obj.parentNode.getElementsByTagName("div")[0];
+            if (inner.style.display == "none")
+                inner.style.display = "";
+            else
+                inner.style.display = "none";
+            }
+    </script>
 </head>
 
 <body>
-    <div class="container3">
+    <div class="containerpub">
         <header>
             <nav>
             <input type="checkbox" id="check">
@@ -28,35 +37,71 @@
             </nav>
         </header>
 
-
-            <footer>
-                <div class="inicio">
-                <p>Felipe Cascóis</p>
+        <div class="contentproj"
+            <div class="flex-container-proj">
+                <div class="flex-item-left-proj">
+                    <img id="projeto1" class="projeto" onClick="showContent(this)" src="projeto1.png">
+                    <div class="inner" style="display:none;">
+                        <br>
+                        <h2 class="h2-proj">V2IP: Videomonitoramento para Identificação de Pessoas e Veículos ()</h2>
+                        <h3 class="h3-proj">Duration:</h3> <hr>
+                        <p class="p-proj">4 Years</p>
+                        <h3 class="h3-proj">Scope</h3> <hr>
+                        <p class="p-proj">
+                            International project funded by Brazilian Ministry of Education through the <it>Coordenação de Aperfeiçoamento de Pessoal de Nivel Superior</it> (CAPES).
+                        </p>
+                        <h3 class="h3-proj"> Description</h3> <hr>
+                        <p class="p-proj"> Automated surveillance of video area5 of interest can help prevent crimes by recognizing potentially suspicious actions, as well as investigating by analyzing stored videos. Among the main problems faced by video surveillance are the large amount of data to be processed and its quality. This project focuses on the development of scalable and accurate solutions that can process large amounts of data and can be transmitted in low resolution videos, videos containing people and vehicles far from the camera. Among the applications to be investigated are the identification of people and recognition of license plates in low quality data.</p>
+                        <h3 class="h3-proj">Responsability</h3> <hr>
+                        <p class="p-proj">Participant </p>
+                    </div>
                 </div>
-
-                <div class="butoes">
-                <input type="button" id="fb">
-                <label for="fb" class="facebook">
-                <i class="fab fa-facebook-f"></i>
-                </label>
-
-                <input type="button" id="link">
-                <label for="fb" class="facebook">
-                <i class="fab fa-linkedin"></i>
-                </label>
-
-                <input type="button" id="ytb">
-                <label for="fb" class="youtube">
-                <i class="fab fa-youtube"></i>
-                </label>
-
-
-                <input type="button" id="git">
-                <label for="fb" class="github">
-                <i class="fab fa-github"></i>
-                </label>
+                <div class="flex-item-right-proj">
+                    <img id="projeto2" class="projeto" onClick="showContent(this)" src="projeto2.png" >
+                    <div class="inner" style="display:none;">
+                        <br>
+                        <h2 class="h2-proj">QUIS-CAMPI: Biometric Recognition in Surveillance Environments</h2>
+                        <h3 class="h3-proj">Duration:</h3> <hr>
+                        <p class="p-proj">1 year (03/2014 - 03/2015) </p>
+                        <h3 class="h3-proj">Scope</h3> <hr>
+                        <p class="p-proj">
+                            National project funded by <it>Instituto de Telecomunicações</it>
+                        </p>
+                        <h3 class="h3-proj"> Description</h3> <hr>
+                        <p class="p-proj"> The acronym of this proposal comes from the Latin and summarizes its goals: "Quis" stands for "Wwho is" and "Campus" refers to a delimited space. Hence, in this project we airr at research and development of a biometric recognition system able to work in completely covert conditionis. The main idea is that whenever a subject enters a QUIS-CAMPUS, it is automaticaliy recognized, using multiple biometric sources and withoul requiring any active particisation rom the subject side. </p>
+                        <h3 class="h3-proj">Responsability</h3> <hr>
+                        <p class="p-proj">Development of bicmetric recognition methods capable of working in surveilance scenar os.</p>
+                    </div>
                 </div>
-            </footer>
-        </div>
-    </body>
+              </div>
+        <footer>
+            <div class="inicio">
+            <p>Felipe Cascóis</p>
+            </div>
+
+            <div class="butoes">
+            <input type="button" id="fb">
+            <label for="fb" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+            </label>
+
+            <input type="button" id="link">
+            <label for="fb" class="facebook">
+            <i class="fab fa-linkedin"></i>
+            </label>
+
+            <input type="button" id="ytb">
+            <label for="fb" class="youtube">
+            <i class="fab fa-youtube"></i>
+            </label>
+
+
+            <input type="button" id="git">
+            <label for="fb" class="github">
+            <i class="fab fa-github"></i>
+            </label>
+            </div>
+        </footer>
+    </div>
+  </body>
 </html>
