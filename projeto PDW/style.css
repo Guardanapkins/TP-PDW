@@ -24,6 +24,7 @@ body{
   line-height: 20vh;
   margin-left: 10%;
   font-weight: normal;
+  text-decoration: none;
 }
 
 .logo:hover{
