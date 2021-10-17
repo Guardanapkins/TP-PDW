@@ -510,7 +510,23 @@ a.active, a:hover{
 }
 /*end subjects page*/
 
+/*Start of Orientations page*/
 
+.contentpub h2{
+    padding-bottom: 0.5%;
+    color: white;
+}
+
+
+
+.p-orient{
+    padding-top: 0.7%;
+    padding-bottom: 1%;
+    line-height: 1.6;
+    font-family: var(--bs-font-sans-serif);
+}
+
+/*end of orientations page*/
 footer{
   margin-top: 3vh;
   grid-column-start: 1;
@@ -523,7 +539,6 @@ footer{
   flex-direction: column;
   margin-left: 10vw;
   margin-right: 10vw;
-  border-radius: 3%;
 }
 
 .facebook, .youtube, .linkedin, .github{
